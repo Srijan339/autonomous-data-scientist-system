@@ -1,0 +1,13 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+/.vscode/
+env/
+*.sqlite3
+data/
+*.egg-info/
+dist/
+build/
+secrets.json
+reports/
