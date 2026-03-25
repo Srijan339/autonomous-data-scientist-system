@@ -1,64 +1,28 @@
-print("Starting data pipeline...")
+from __future__ import annotations
+
+import argparse
+import logging
 
 from src.data_processing.data_loader import DataLoader
-from src.data_processing.data_validator import DataValidator
-from src.data_processing.data_profiler import DataProfiler
-from src.data_processing.data_cleaner import DataCleaner
-from src.analytics.eda_engine import EDAEngine
+from src.ml_pipeline.model_trainer import AutoMLSystem
 
 
-# Load dataset
-loader = DataLoader("data/2019.csv")
-df = loader.load_data()
-
-# Validate dataset
-validator = DataValidator(df)
-validator.print_report()
-
-# Profile dataset
-profiler = DataProfiler(df)
-profiler.print_profile()
-
-# Clean dataset (with optional outlier removal)
-cleaner = DataCleaner(df)
-df_clean = cleaner.clean_dataset(remove_outliers=False)  # Set to True to remove outliers
-
-# Print outlier detection report  
-outliers = cleaner.detect_outliers()
-print("\n🔍 OUTLIER DETECTION REPORT")
-print("-" * 40)
-for col, count in outliers.items():
-    if count > 0:
-        print(f"  {col}: {count} outliers detected")
-
-# Run EDA
-eda = EDAEngine(df_clean)
-eda.run_full_eda()
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run the production AutoML pipeline on a dataset.")
+    parser.add_argument("--data", default="data/2019.csv", help="Path to the input dataset.")
+    parser.add_argument("--target", default="Score", help="Name of the target column.")
+    parser.add_argument("--output-dir", default="reports", help="Directory used for generated artifacts.")
+    return parser.parse_args()
 
 
-from src.ml_pipeline.feature_engineering import FeatureEngineer
+def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(name)s | %(message)s")
+    args = parse_args()
+
+    df = DataLoader(args.data).load_data()
+    automl = AutoMLSystem(output_dir=args.output_dir)
+    automl.run(df=df, target_column=args.target)
 
 
-target_column = "Score"
-
-feature_engineer = FeatureEngineer(df_clean, target_column)
-
-X_train, X_test, y_train, y_test = feature_engineer.run_feature_engineering()
-
-
-from src.ml_pipeline.model_trainer import ModelTrainer
-
-
-trainer = ModelTrainer(
-    X_train,
-    X_test,
-    y_train,
-    y_test
-)
-
-results = trainer.train_models()
-
-print("\nMODEL LEADERBOARD")
-print(results)
-
-best_model = trainer.save_best_model(results)
+if __name__ == "__main__":
+    main()

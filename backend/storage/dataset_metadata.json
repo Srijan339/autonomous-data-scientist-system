@@ -1,0 +1,82 @@
+{
+  "file_name": "president_heights.csv",
+  "stored_path": "C:\\Users\\SRIJAN\\OneDrive\\Pictures\\Desktop\\DATASCIENCE\\Autonomous Data Scientist System\\backend\\storage\\active_dataset.csv",
+  "shape": {
+    "rows": 42,
+    "columns": 3
+  },
+  "columns": [
+    "order",
+    "name",
+    "height(cm)"
+  ],
+  "preview": [
+    {
+      "order": 1,
+      "name": "George Washington",
+      "height(cm)": 189
+    },
+    {
+      "order": 2,
+      "name": "John Adams",
+      "height(cm)": 170
+    },
+    {
+      "order": 3,
+      "name": "Thomas Jefferson",
+      "height(cm)": 189
+    },
+    {
+      "order": 4,
+      "name": "James Madison",
+      "height(cm)": 163
+    },
+    {
+      "order": 5,
+      "name": "James Monroe",
+      "height(cm)": 183
+    },
+    {
+      "order": 6,
+      "name": "John Quincy Adams",
+      "height(cm)": 171
+    },
+    {
+      "order": 7,
+      "name": "Andrew Jackson",
+      "height(cm)": 185
+    },
+    {
+      "order": 8,
+      "name": "Martin Van Buren",
+      "height(cm)": 168
+    },
+    {
+      "order": 9,
+      "name": "William Henry Harrison",
+      "height(cm)": 173
+    },
+    {
+      "order": 10,
+      "name": "John Tyler",
+      "height(cm)": 183
+    }
+  ],
+  "dataset_hash": "73b350f39b834bbb1cc51c5fd5990c133e3fb8ca3a585b9676304637abf6eef4",
+  "recommended_targets": [
+    {
+      "column": "name",
+      "reason": "Suitable target candidate."
+    },
+    {
+      "column": "height(cm)",
+      "reason": "Suitable target candidate."
+    }
+  ],
+  "blocked_targets": [
+    {
+      "column": "order",
+      "reason": "Column appears monotonic, which usually indicates an index or ordered key."
+    }
+  ]
+}

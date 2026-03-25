@@ -1,0 +1,558 @@
+INFO:     Started server process [23636]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-03-25 15:12:11,621 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,778 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,816 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,846 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:12:11,897 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (891, 12)
+2026-03-25 15:12:11,985 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:85: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(10, 8))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+2026-03-25 15:12:19,416 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+2026-03-25 15:12:21,171 | INFO | AutoMLSystem | Training candidate model: Random Forest Classifier
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+2026-03-25 15:13:06,466 | INFO | AutoMLSystem | Best params for random forest: {'model__n_estimators': 200, 'model__min_samples_split': 5, 'model__min_samples_leaf': 1, 'model__max_depth': None}
+2026-03-25 15:13:06,468 | INFO | AutoMLSystem | Training candidate model: Gradient Boosting Classifier
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py:316: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure()
+C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\shap\plots\_beeswarm.py:719: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(1.5 * max_display + 1, 0.8 * max_display + 1))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py:342: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 5))
+2026-03-25 15:13:30,223 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\best_model.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model.pkl
+2026-03-25 15:13:30,226 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\preprocessing_pipeline.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\pipeline.pkl
+2026-03-25 15:13:30,229 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\model_metadata.json to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model_metadata.json
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\feature_engineering.py:120: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  X[f"{column}_word_count"] = series.str.split().str.len().fillna(0)
+2026-03-25 15:16:40,743 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:16:40,931 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:16:50,742 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:16:50,780 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:16:50,814 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:16:50,874 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:85: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(10, 8))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+2026-03-25 15:16:53,820 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:16:53,842 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 104, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 179, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+2026-03-25 15:17:02,591 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:17:02,601 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:17:02,612 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:17:02,646 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:85: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(10, 8))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+2026-03-25 15:17:04,833 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 96, in run
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<3 lines>...
+        stratify=y if problem_type == "classification" and y.nunique(dropna=True) <= max(20, int(len(y) * 0.2)) else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2945, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 1928, in split
+    for train, test in self._iter_indices(X, y, groups):
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2346, in _iter_indices
+    raise ValueError(
+    ...<5 lines>...
+    )
+ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [163, 171, 174, 177, 179, 180]
+2026-03-25 15:17:17,321 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:17:17,333 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:17:17,342 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:17:17,372 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:85: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(10, 8))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+2026-03-25 15:17:19,709 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:17:19,713 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 104, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 179, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+2026-03-25 15:17:45,047 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:17:45,056 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:17:45,064 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:17:45,092 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:85: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(10, 8))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:102: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(8, 4))
+C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\analytics\eda_engine.py:112: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.figure(figsize=(6, 4))
+2026-03-25 15:17:48,669 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:17:48,674 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 104, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 179, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.

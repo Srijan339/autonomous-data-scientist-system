@@ -1,0 +1,136 @@
+INFO:     127.0.0.1:52247 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55785 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53743 - "POST /upload HTTP/1.1" 200 OK
+
+DATA VALIDATION REPORT
+------------------------------------------------------------
+Rows: 891 | Columns: 12
+Duplicate rows: 0
+
+Missing values:
+  - Age: 177 (19.87%)
+  - Cabin: 687 (77.1%)
+  - Embarked: 2 (0.22%)
+
+DATA CLEANING REPORT
+------------------------------------------------------------
+Rows before: 891
+Rows after: 891
+Duplicates removed: 0
+Fully empty columns removed: []
+Normalized missing placeholders: 0
+
+AUTOML RESULTS
+------------------------------------------------------------
+Problem type: classification
+Best model: Random Forest Classifier
+Metrics: {'accuracy': 0.759777, 'precision': 0.760456, 'recall': 0.759777, 'f1': 0.760092}
+Top feature importance:
+  - categorical__Sex_female: 0.096885
+  - categorical__Sex_male: 0.087816
+  - continuous_numeric__PassengerId_x_Fare: 0.054195
+  - continuous_numeric__Fare: 0.047796
+  - continuous_numeric__Name_char_length: 0.046487
+  - continuous_numeric__FarePerPerson: 0.044793
+  - continuous_numeric__Age: 0.041786
+  - continuous_numeric__Fare_x_Age: 0.037516
+  - continuous_numeric__PassengerId: 0.033672
+  - continuous_numeric__PassengerId_x_Age: 0.029171
+INFO:     127.0.0.1:53745 - "POST /train HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53105 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53106 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49748 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49755 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49756 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49757 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49758 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49759 - "POST /upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49760 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49761 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49762 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49763 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49764 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49765 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49766 - "GET /health HTTP/1.1" 200 OK
+
+DATA VALIDATION REPORT
+------------------------------------------------------------
+Rows: 42 | Columns: 3
+Duplicate rows: 0
+
+Missing values:
+
+DATA CLEANING REPORT
+------------------------------------------------------------
+Rows before: 42
+Rows after: 42
+Duplicates removed: 0
+Fully empty columns removed: []
+Normalized missing placeholders: 0
+INFO:     127.0.0.1:49768 - "POST /train HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:49772 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49773 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49774 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49776 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49777 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49778 - "GET /health HTTP/1.1" 200 OK
+
+DATA VALIDATION REPORT
+------------------------------------------------------------
+Rows: 42 | Columns: 3
+Duplicate rows: 0
+
+Missing values:
+
+DATA CLEANING REPORT
+------------------------------------------------------------
+Rows before: 42
+Rows after: 42
+Duplicates removed: 0
+Fully empty columns removed: []
+Normalized missing placeholders: 0
+INFO:     127.0.0.1:49779 - "POST /train HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:59024 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59025 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59026 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59029 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59030 - "GET /health HTTP/1.1" 200 OK
+
+DATA VALIDATION REPORT
+------------------------------------------------------------
+Rows: 42 | Columns: 3
+Duplicate rows: 0
+
+Missing values:
+
+DATA CLEANING REPORT
+------------------------------------------------------------
+Rows before: 42
+Rows after: 42
+Duplicates removed: 0
+Fully empty columns removed: []
+Normalized missing placeholders: 0
+INFO:     127.0.0.1:59031 - "POST /train HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:59035 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59036 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59037 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59038 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59039 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59040 - "GET /health HTTP/1.1" 200 OK
+
+DATA VALIDATION REPORT
+------------------------------------------------------------
+Rows: 42 | Columns: 3
+Duplicate rows: 0
+
+Missing values:
+
+DATA CLEANING REPORT
+------------------------------------------------------------
+Rows before: 42
+Rows after: 42
+Duplicates removed: 0
+Fully empty columns removed: []
+Normalized missing placeholders: 0
+INFO:     127.0.0.1:59041 - "POST /train HTTP/1.1" 400 Bad Request

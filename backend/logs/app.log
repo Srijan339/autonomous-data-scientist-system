@@ -1,0 +1,441 @@
+2026-03-25 14:25:34,346 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:25:34,407 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:25:34,420 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:25:34,447 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:25:34,485 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (891, 12)
+2026-03-25 14:25:34,552 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:25:41,595 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 14:25:42,550 | INFO | AutoMLSystem | Training candidate model: Random Forest Classifier
+2026-03-25 14:26:23,804 | INFO | AutoMLSystem | Best params for random forest: {'model__n_estimators': 200, 'model__min_samples_split': 5, 'model__min_samples_leaf': 1, 'model__max_depth': None}
+2026-03-25 14:26:23,804 | INFO | AutoMLSystem | Training candidate model: Gradient Boosting Classifier
+2026-03-25 14:26:38,856 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\best_model.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model.pkl
+2026-03-25 14:26:38,859 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\preprocessing_pipeline.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\pipeline.pkl
+2026-03-25 14:26:38,861 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\model_metadata.json to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model_metadata.json
+2026-03-25 14:27:30,755 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:27:30,823 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:27:43,618 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:27:43,689 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:27:43,831 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (38006, 3)
+2026-03-25 14:27:43,891 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:27:46,318 | INFO | AutoMLSystem | Training candidate model: Linear Regression
+2026-03-25 14:27:48,747 | INFO | AutoMLSystem | Training candidate model: Random Forest Regressor
+2026-03-25 14:28:54,028 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:28:54,099 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:28:54,231 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (38006, 3)
+2026-03-25 14:28:54,293 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:28:57,182 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 14:29:15,894 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:29:16,081 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:29:16,316 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (38006, 3)
+2026-03-25 14:29:16,382 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:29:19,815 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 14:30:34,300 | INFO | AutoMLSystem | Training candidate model: Random Forest Classifier
+2026-03-25 14:30:56,625 | INFO | AutoMLSystem | Training candidate model: Random Forest Classifier
+2026-03-25 14:31:36,900 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:31:36,915 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:31:45,908 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:31:45,924 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:31:45,941 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 14:31:45,997 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:31:49,374 | INFO | AutoMLSystem | Training candidate model: Linear Regression
+2026-03-25 14:31:49,621 | INFO | AutoMLSystem | Training candidate model: Random Forest Regressor
+2026-03-25 14:32:25,199 | INFO | AutoMLSystem | Best params for random forest: {'model__n_estimators': 100, 'model__min_samples_split': 2, 'model__min_samples_leaf': 4, 'model__max_depth': 5}
+2026-03-25 14:32:25,204 | INFO | AutoMLSystem | Training candidate model: Gradient Boosting Regressor
+2026-03-25 14:32:28,563 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\best_model.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model.pkl
+2026-03-25 14:32:28,567 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\preprocessing_pipeline.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\pipeline.pkl
+2026-03-25 14:32:28,570 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\model_metadata.json to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model_metadata.json
+2026-03-25 14:35:01,332 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:35:01,571 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:35:16,653 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:35:16,719 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:35:16,760 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 14:35:16,868 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:35:20,420 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 79, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 60, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 94, in run
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<3 lines>...
+        stratify=y if problem_type == "classification" and y.nunique(dropna=True) <= max(20, int(len(y) * 0.2)) else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2945, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 1928, in split
+    for train, test in self._iter_indices(X, y, groups):
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2346, in _iter_indices
+    raise ValueError(
+    ...<5 lines>...
+    )
+ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [163, 171, 174, 177, 179, 180]
+2026-03-25 14:35:41,905 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:35:41,958 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:35:41,980 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 14:35:42,035 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:35:45,397 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 79, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 60, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 94, in run
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<3 lines>...
+        stratify=y if problem_type == "classification" and y.nunique(dropna=True) <= max(20, int(len(y) * 0.2)) else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2945, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 1928, in split
+    for train, test in self._iter_indices(X, y, groups):
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2346, in _iter_indices
+    raise ValueError(
+    ...<5 lines>...
+    )
+ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [163, 171, 174, 177, 179, 180]
+2026-03-25 14:36:07,213 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:36:07,311 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:36:07,343 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 14:36:07,413 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:36:10,363 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 79, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 60, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 94, in run
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<3 lines>...
+        stratify=y if problem_type == "classification" and y.nunique(dropna=True) <= max(20, int(len(y) * 0.2)) else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2945, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 1928, in split
+    for train, test in self._iter_indices(X, y, groups):
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2346, in _iter_indices
+    raise ValueError(
+    ...<5 lines>...
+    )
+ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [163, 171, 174, 177, 179, 180]
+2026-03-25 14:36:30,261 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:36:30,276 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:36:30,290 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 14:36:30,322 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:36:33,181 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 14:36:33,205 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 79, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 60, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 102, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 162, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+2026-03-25 14:36:48,244 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:36:48,256 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 14:36:48,267 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 14:36:48,301 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 14:39:31,345 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 14:39:31,416 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,621 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,778 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,816 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:12:11,846 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:12:11,897 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (891, 12)
+2026-03-25 15:12:11,985 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 15:12:19,416 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:12:21,171 | INFO | AutoMLSystem | Training candidate model: Random Forest Classifier
+2026-03-25 15:13:06,466 | INFO | AutoMLSystem | Best params for random forest: {'model__n_estimators': 200, 'model__min_samples_split': 5, 'model__min_samples_leaf': 1, 'model__max_depth': None}
+2026-03-25 15:13:06,468 | INFO | AutoMLSystem | Training candidate model: Gradient Boosting Classifier
+2026-03-25 15:13:30,223 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\best_model.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model.pkl
+2026-03-25 15:13:30,226 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\preprocessing_pipeline.pkl to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\pipeline.pkl
+2026-03-25 15:13:30,229 | INFO | backend.pipeline | Copied C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\model_metadata.json to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\models\model_metadata.json
+2026-03-25 15:16:40,743 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:16:40,931 | INFO | backend.pipeline | Uploaded dataset stored at C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:16:50,742 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:16:50,780 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:16:50,814 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:16:50,874 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 15:16:53,820 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:16:53,842 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 104, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 179, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+2026-03-25 15:17:02,591 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:17:02,601 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:17:02,612 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:17:02,646 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 15:17:04,833 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 96, in run
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<3 lines>...
+        stratify=y if problem_type == "classification" and y.nunique(dropna=True) <= max(20, int(len(y) * 0.2)) else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2945, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 1928, in split
+    for train, test in self._iter_indices(X, y, groups):
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 2346, in _iter_indices
+    raise ValueError(
+    ...<5 lines>...
+    )
+ValueError: The least populated classes in y have only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2. Classes with too few members are: [163, 171, 174, 177, 179, 180]
+2026-03-25 15:17:17,321 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:17:17,333 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:17:17,342 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:17:17,372 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 15:17:19,709 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:17:19,713 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 104, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 179, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.
+2026-03-25 15:17:45,047 | INFO | src.data_processing.data_loader | Loading dataset from C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\storage\active_dataset.csv
+2026-03-25 15:17:45,056 | INFO | src.data_processing.data_cleaner | Starting dataset cleaning.
+2026-03-25 15:17:45,064 | INFO | src.data_processing.data_cleaner | Cleaning finished. Shape after cleaning: (42, 3)
+2026-03-25 15:17:45,092 | INFO | src.analytics.eda_engine | EDA summary saved to C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\reports\eda_summary.json
+2026-03-25 15:17:48,669 | INFO | AutoMLSystem | Training candidate model: Logistic Regression
+2026-03-25 15:17:48,674 | ERROR | backend.main | Training failed.
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\main.py", line 83, in train_model
+    results = pipeline_service.train_from_uploaded_dataset(request.target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\backend\pipeline.py", line 80, in train_from_uploaded_dataset
+    results = automl.run(df=df, target_column=target_column)
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 104, in run
+    leaderboard, trained_models = self._train_candidates(X_train, y_train, problem_type)
+                                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\OneDrive\Pictures\Desktop\DATASCIENCE\Autonomous Data Scientist System\src\ml_pipeline\model_trainer.py", line 179, in _train_candidates
+    cv_scores = cross_val_score(pipeline, X_train, y_train, cv=cv, scoring=scorer, n_jobs=1)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 651, in cross_val_score
+    cv_results = cross_validate(
+        estimator=estimator,
+    ...<9 lines>...
+        error_score=error_score,
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 373, in cross_validate
+    results = parallel(
+        delayed(_fit_and_score)(
+    ...<15 lines>...
+        for train, test in indices
+    )
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 91, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py", line 1911, in _get_sequential_output
+    for func, args, kwargs in iterable:
+                              ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py", line 89, in <genexpr>
+    for delayed_func, args, kwargs in iterable
+                                      ^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_validation.py", line 390, in <genexpr>
+    for train, test in indices
+                       ^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 412, in split
+    for train, test in super().split(X, y, groups):
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 143, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 846, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "C:\Users\SRIJAN\AppData\Roaming\Python\Python313\site-packages\sklearn\model_selection\_split.py", line 808, in _make_test_folds
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: n_splits=5 cannot be greater than the number of members in each class.

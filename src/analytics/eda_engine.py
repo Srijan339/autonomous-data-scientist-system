@@ -1,164 +1,140 @@
-import os
+from __future__ import annotations
+
 import json
-from datetime import datetime
+import logging
+from pathlib import Path
+from typing import Dict, List, Optional
+
 import matplotlib.pyplot as plt
-import seaborn as sns
 import pandas as pd
+import seaborn as sns
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 class EDAEngine:
+    """Generate compact EDA plots and summaries for arbitrary tabular datasets."""
 
-    def __init__(self, df, output_folder="reports", target_column="Score"):
-        self.df = df
-        self.output_folder = output_folder
+    def __init__(self, df: pd.DataFrame, output_folder: str = "reports", target_column: Optional[str] = None):
+        self.df = df.copy()
+        self.output_folder = Path(output_folder)
         self.target_column = target_column
-        self.summary_data = {}
+        self.output_folder.mkdir(parents=True, exist_ok=True)
 
-        if not os.path.exists(output_folder):
-            os.makedirs(output_folder)
+    def run_full_eda(self) -> Dict[str, object]:
+        numeric_columns = self.df.select_dtypes(include="number").columns.tolist()
+        summary = self.generate_summary_report()
+        chart_paths: List[str] = []
 
-    def correlation_heatmap(self):
+        if numeric_columns:
+            correlation_path = self._save_correlation_heatmap(numeric_columns)
+            if correlation_path:
+                chart_paths.append(str(correlation_path.resolve()))
+            chart_paths.extend(self._save_numeric_distributions(numeric_columns[: min(6, len(numeric_columns))]))
 
-        numeric_df = self.df.select_dtypes(include=["int64", "float64"])
+        summary["chart_paths"] = chart_paths
+
+        return summary
+
+    def generate_summary_report(self) -> Dict[str, object]:
+        summary = {
+            "shape": {"rows": int(self.df.shape[0]), "columns": int(self.df.shape[1])},
+            "columns": list(self.df.columns),
+            "missing_values": self.df.isna().sum().to_dict(),
+            "dtypes": self.df.dtypes.astype(str).to_dict(),
+            "numeric_summary": self.df.describe(include=["number"]).fillna(0).to_dict() if not self.df.empty else {},
+            "categorical_summary": self._categorical_summary(),
+        }
+
+        if self.target_column and self.target_column in self.df.columns:
+            summary["target_summary"] = {
+                "nunique": int(self.df[self.target_column].nunique(dropna=True)),
+                "missing": int(self.df[self.target_column].isna().sum()),
+            }
+
+        summary_path = self.output_folder / "eda_summary.json"
+        with summary_path.open("w", encoding="utf-8") as file_handle:
+            json.dump(summary, file_handle, indent=2, default=str)
+
+        text_path = self.output_folder / "EDA_SUMMARY.txt"
+        with text_path.open("w", encoding="utf-8") as file_handle:
+            file_handle.write(self._build_text_summary(summary))
+
+        LOGGER.info("EDA summary saved to %s", summary_path)
+        return summary
+
+    def _categorical_summary(self) -> Dict[str, Dict[str, object]]:
+        categorical_columns = self.df.select_dtypes(include=["object", "string", "category", "bool"]).columns.tolist()
+        summary: Dict[str, Dict[str, object]] = {}
+
+        for column in categorical_columns[:20]:
+            mode_series = self.df[column].mode(dropna=True)
+            summary[column] = {
+                "unique": int(self.df[column].nunique(dropna=True)),
+                "top": None if mode_series.empty else str(mode_series.iloc[0]),
+                "missing": int(self.df[column].isna().sum()),
+            }
+
+        return summary
+
+    def _save_correlation_heatmap(self, numeric_columns: list[str]) -> Optional[Path]:
+        if len(numeric_columns) < 2:
+            return None
 
         plt.figure(figsize=(10, 8))
-
-        sns.heatmap(
-            numeric_df.corr(),
-            annot=True,
-            cmap="coolwarm",
-            fmt=".2f"
-        )
-
+        corr = self.df[numeric_columns].corr(numeric_only=True)
+        sns.heatmap(corr, cmap="coolwarm", center=0)
         plt.title("Correlation Heatmap")
-
-        path = f"{self.output_folder}/correlation_heatmap.png"
-
-        plt.savefig(path)
+        plt.tight_layout()
+        output_path = self.output_folder / "correlation_heatmap.png"
+        plt.savefig(output_path)
         plt.close()
+        return output_path
 
-        print(f"Saved: {path}")
+    def _save_numeric_distributions(self, numeric_columns: list[str]) -> List[str]:
+        saved_paths: List[str] = []
+        for column in numeric_columns:
+            series = self.df[column].dropna()
+            if series.empty:
+                continue
 
-    def histograms(self):
-
-        numeric_cols = self.df.select_dtypes(
-            include=["int64", "float64"]
-        ).columns
-
-        for col in numeric_cols:
-
-            plt.figure()
-
-            sns.histplot(self.df[col], kde=True)
-
-            plt.title(f"Distribution of {col}")
-
-            path = f"{self.output_folder}/hist_{col}.png"
-
-            plt.savefig(path)
+            plt.figure(figsize=(8, 4))
+            sns.histplot(series, kde=True)
+            plt.title(f"Distribution of {column}")
+            plt.tight_layout()
+            safe_name = self._safe_file_name(column)
+            hist_path = self.output_folder / f"hist_{safe_name}.png"
+            plt.savefig(hist_path)
             plt.close()
+            saved_paths.append(str(hist_path.resolve()))
 
-            print(f"Saved: {path}")
+            plt.figure(figsize=(6, 4))
+            sns.boxplot(x=series)
+            plt.title(f"Boxplot of {column}")
+            plt.tight_layout()
+            boxplot_path = self.output_folder / f"boxplot_{safe_name}.png"
+            plt.savefig(boxplot_path)
+            plt.close()
+            saved_paths.append(str(boxplot_path.resolve()))
+        return saved_paths
 
-    def boxplots(self):
+    @staticmethod
+    def _safe_file_name(value: str) -> str:
+        return "".join(character if character.isalnum() or character in {"_", "-"} else "_" for character in value)
 
-        numeric_cols = self.df.select_dtypes(
-            include=["int64", "float64"]
-        ).columns
+    @staticmethod
+    def _build_text_summary(summary: Dict[str, object]) -> str:
+        lines = [
+            "EDA SUMMARY REPORT",
+            "=" * 60,
+            f"Rows: {summary['shape']['rows']}",
+            f"Columns: {summary['shape']['columns']}",
+            "",
+            "Missing values:",
+        ]
 
-        for col in numeric_cols:
+        for column, count in summary["missing_values"].items():
+            lines.append(f"  - {column}: {count}")
 
-            plt.figure()
-            
-            # Drop NaN values for boxplot
-            data_clean = self.df[col].dropna()
-            
-            if len(data_clean) > 0:
-                plt.boxplot(data_clean)
-                plt.title(f"Boxplot of {col}")
-                plt.ylabel(col)
-
-                path = f"{self.output_folder}/boxplot_{col}.png"
-
-                plt.savefig(path)
-                plt.close()
-
-                print(f"Saved: {path}")
-            else:
-                plt.close()
-                print(f"Skipped {col}: No valid data")
-
-    def get_top_correlations(self, top_n=5):
-        """Get top correlations with target column"""
-        if self.target_column not in self.df.columns:
-            return {}
-        
-        numeric_df = self.df.select_dtypes(include=["int64", "float64"])
-        correlations = numeric_df.corr()[self.target_column].sort_values(ascending=False)
-        
-        # Exclude the target column itself
-        correlations = correlations[correlations.index != self.target_column]
-        
-        return correlations.head(top_n)
-
-    def generate_summary_report(self):
-        """Generate text summary report"""
-        # Only select numeric columns
-        numeric_cols = self.df.select_dtypes(include=["int64", "float64"]).columns
-        
-        # Filter out columns with all NaN values
-        numeric_cols = [col for col in numeric_cols if self.df[col].notna().sum() > 0]
-        
-        summary = []
-        summary.append("=" * 60)
-        summary.append("EDA SUMMARY REPORT")
-        summary.append("=" * 60)
-        summary.append(f"\nGenerated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        summary.append(f"Dataset Shape: {self.df.shape[0]} rows x {self.df.shape[1]} columns")
-        
-        # Top Correlations
-        summary.append(f"\nTOP CORRELATIONS WITH {self.target_column}")
-        summary.append("-" * 40)
-        
-        top_corrs = self.get_top_correlations(top_n=5)
-        for col, corr_value in top_corrs.items():
-            summary.append(f"  {col} -> {corr_value:.2f}")
-        
-        # Column Statistics (only for numeric columns with valid data)
-        summary.append(f"\nNUMERIC COLUMNS STATISTICS")
-        summary.append("-" * 40)
-        for col in numeric_cols:
-            summary.append(f"\n{col}:")
-            summary.append(f"  Mean: {self.df[col].mean():.2f}")
-            summary.append(f"  Std Dev: {self.df[col].std():.2f}")
-            summary.append(f"  Min: {self.df[col].min():.2f}")
-            summary.append(f"  Max: {self.df[col].max():.2f}")
-            summary.append(f"  Missing: {self.df[col].isna().sum()}")
-        
-        summary.append("\n" + "=" * 60)
-        
-        # Save summary with UTF-8 encoding
-        report_path = f"{self.output_folder}/EDA_SUMMARY.txt"
-        with open(report_path, "w", encoding="utf-8") as f:
-            f.write("\n".join(summary))
-        
-        print(f"\n✅ Summary saved: {report_path}")
-        
-        # Print summary
-        print("\n".join(summary))
-        
-        self.summary_data = {"correlations": top_corrs.to_dict()}
-
-    def run_full_eda(self):
-
-        print("\n📊 Running Automated EDA...\n")
-
-        self.correlation_heatmap()
-
-        self.histograms()
-
-        self.boxplots()
-
-        self.generate_summary_report()
-
-        print("\nEDA Completed. Reports saved in 'reports/' folder.")
+        return "\n".join(lines)
