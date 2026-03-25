@@ -1,99 +1,182 @@
-# 🚀 ML Pipeline System (Production-Ready)
+# Automated Data Science & Analytics Studio
 
-## 📌 Overview
+An end-to-end AI data scientist web app built with FastAPI, Streamlit, and a production-style AutoML pipeline.
 
-This project is a modular, production-ready Machine Learning pipeline designed to handle the complete ML lifecycle:
+## Overview
 
-* 📥 Data Loading
-* 🧹 Data Cleaning
-* ✅ Data Validation
-* ⚙️ Feature Engineering
-* 🤖 Model Training
+This project turns a tabular dataset into a working analysis workspace:
 
-Built with **scalability, modular design, and real-world ML challenges** in mind.
+- Upload a CSV dataset
+- Validate and recommend target columns
+- Run cleaning, EDA, feature engineering, model selection, tuning, and evaluation
+- Generate explainability outputs and structured insights
+- Save reusable models and artifacts
+- Ask questions against a retrieval-backed knowledge layer
+- Run live predictions from the trained model
 
----
+## Product Architecture
 
-## 🏗️ Project Structure
+The current system includes:
 
+- `backend/`
+  - FastAPI application
+  - upload, train, predict, results, and ask endpoints
+  - artifact caching and persistence
+- `frontend/`
+  - Streamlit product UI
+  - upload flow, target selection, metrics, charts, assistant, predictions
+- `src/data_processing/`
+  - loading, validation, cleaning, profiling
+- `src/analytics/`
+  - EDA engine
+  - insight generation
+- `src/ml_pipeline/`
+  - problem detection
+  - feature engineering
+  - model training and evaluation
+- `src/rag/`
+  - local vector store
+  - retriever
+  - question-answering layer
+
+## Features
+
+- Automatic problem detection for classification vs regression
+- Target validation with blocked identifier/index-like columns
+- Leakage-safe preprocessing with sklearn pipelines
+- Missing value imputation, encoding, and scaling
+- Domain and interaction feature creation
+- Model selection across classification and regression algorithms
+- Cross-validation and RandomizedSearchCV tuning
+- Explainability with feature importance and SHAP summary plots
+- Structured insight generation and knowledge-base creation
+- Retrieval-backed assistant over stored analysis artifacts
+- Saved model, pipeline, metrics, leaderboard, insights, and knowledge files
+- Product-style Streamlit interface with backend health handling
+
+## Project Structure
+
+```text
+.
+├── backend/
+│   ├── main.py
+│   ├── model_loader.py
+│   ├── pipeline.py
+│   ├── logs/
+│   └── storage/
+├── frontend/
+│   ├── app.py
+│   └── logs/
+├── models/
+├── reports/
+├── src/
+│   ├── analytics/
+│   ├── data_processing/
+│   ├── ml_pipeline/
+│   └── rag/
+├── data/
+├── requirements.txt
+└── README.md
 ```
-src/
-│── data_processing/
-│   ├── data_loader.py
-│   ├── data_cleaner.py
-│   ├── data_validator.py
-│   ├── data_profiler.py
-│
-│── ml_pipeline/
-│   ├── feature_engineering.py
-│   ├── model_trainer.py
-│
-│── explainability/
-│── app.py
+
+## Backend API
+
+Base URL:
+
+```text
+http://127.0.0.1:8000
 ```
 
----
+Endpoints:
 
-## ⚙️ Features
+- `GET /health`
+  - backend health check
+- `POST /upload`
+  - upload CSV dataset
+  - returns preview, shape, recommended targets, blocked targets
+- `POST /train`
+  - runs the full AutoML workflow for the selected target
+- `POST /predict`
+  - predicts on JSON records using the saved model
+- `GET /results`
+  - returns latest metrics, leaderboard, insights, artifacts, and schema
+- `POST /ask`
+  - answers dataset/model questions using the knowledge layer
 
-✅ Modular pipeline architecture
-✅ Robust handling of missing values
-✅ Categorical encoding (Label / One-Hot)
-✅ Feature scaling using StandardScaler
-✅ Train-test split best practices
-✅ Error handling & extensible logging
-✅ Easy to plug new datasets
-
----
-
-## 🧠 Tech Stack
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-
----
-
-## 🚀 How to Run
+## Installation
 
 ```bash
-git clone https://github.com/your-username/ml-pipeline-system.git
-cd ml-pipeline-system
+git clone https://github.com/Srijan339/autonomous-data-scientist-system.git
+cd autonomous-data-scientist-system
 pip install -r requirements.txt
-python app.py
 ```
 
----
+## Run Locally
 
-## 📊 Example Workflow
+Start the FastAPI backend:
 
-1. Load dataset
-2. Clean and validate data
-3. Apply feature engineering
-4. Train ML model
-5. Evaluate performance
+```bash
+uvicorn backend.main:app --reload
+```
 
----
+Start the Streamlit frontend in a second terminal:
 
-## 🔮 Future Improvements
+```bash
+streamlit run frontend/app.py
+```
 
-* 📈 MLflow experiment tracking
-* 🌐 FastAPI deployment
-* 🐳 Docker containerization
-* ⚡ CI/CD pipeline
-* 📊 Model explainability (SHAP/LIME)
+Open:
 
----
+- Frontend: `http://127.0.0.1:8501`
+- Backend: `http://127.0.0.1:8000`
+- Health: `http://127.0.0.1:8000/health`
 
-## 🤝 Contributing
+## Typical User Flow
 
-Contributions are welcome!
-Feel free to fork this repo and submit a pull request.
+1. Open the Streamlit frontend
+2. Upload a CSV dataset
+3. Pick a recommended target column
+4. Click `Run AI Analysis`
+5. Review:
+   - dataset preview
+   - leaderboard
+   - metrics
+   - EDA charts
+   - SHAP/explainability outputs
+   - structured insights
+6. Ask questions in the assistant tab
+7. Test predictions in the prediction console
 
----
+## Saved Artifacts
 
-## ⭐ Author
+After training, the app saves artifacts under `models/` and `reports/`, including:
 
-**Srijan K**
-Aspiring Data Scientist 🚀
+- trained model
+- preprocessing pipeline
+- metrics JSON
+- leaderboard JSON
+- feature importance JSON
+- EDA summary
+- insights JSON
+- knowledge text file
+- vector store
+- SHAP summary plot
+- confusion matrix or regression evaluation chart
+
+## Example Datasets
+
+Bundled sample datasets are available in `data/`, including:
+
+- Titanic classification dataset
+- housing/regression datasets
+- additional tabular CSV files
+
+## Notes
+
+- The current assistant uses a local retrieval layer for reliability in offline/local environments.
+- Only CSV upload is enabled in the web upload endpoint right now.
+- The app is designed for local development first and can be deployed after repository cleanup and hosting configuration.
+
+## Author
+
+Srijan K
